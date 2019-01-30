@@ -1,0 +1,33 @@
+.section__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 2rem 10rem !important;
+    
+    @include respond(smaller) {
+        flex-direction: column;
+    }
+    
+    .info {
+        font-size: 1.3rem;
+        font-weight: 400;
+        letter-spacing: 0.05rem;
+        line-height: 1.8rem;
+        
+        @include respond(smaller) {
+            
+            &:not(:last-child) {
+                margin-bottom: 0.7rem;
+            }
+        }
+        
+        .link {
+            color: $color-secondary;
+            font-weight: 600;
+            text-decoration: none;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

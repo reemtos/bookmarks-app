@@ -1,0 +1,48 @@
+.section__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .intro-section {
+        flex: 0 1 40rem;
+        padding-top: 5rem;
+        
+        .logo-holder {
+            margin-bottom: 12rem;
+            
+            .icon {
+                color: $color-secondary;
+                font-size: 3rem;
+            }
+        }
+        
+        .intro-phrase {
+            font-size: 3.2rem;
+            font-weight: 900;
+            letter-spacing: 0.29rem;
+            line-height: 4.2rem;
+            margin-bottom: 2.3rem;
+        }
+        
+        .intro-paraphrase {
+            font-size: 2.1rem;
+            font-weight: 400;
+            letter-spacing: 0.1rem;
+            line-height: 3.2rem;
+            margin-bottom: 3rem;
+        }
+    }
+    
+    .illustration-section {
+        flex: 0 0 43rem;
+        
+        @include respond(large) {
+            display: none;
+        }
+        
+        .illustration {
+            height: auto;
+            width: 100%;
+        }
+    }
+}
