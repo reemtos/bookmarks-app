@@ -38,6 +38,10 @@ const Resources = [
       {
         title: 'Streamline Icons',
         url: 'https://www.streamlineicons.com/'
+      },
+      {
+        title: 'Favicon Generator',
+        url: 'https://realfavicongenerator.net/'
       }
     ]
   },
