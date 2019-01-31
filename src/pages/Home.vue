@@ -22,7 +22,7 @@
             </div>
         </section>
         <section class="section section__listing">
-            <div class="category" v-for="(category, index) in filteredResourceList" v-bind:key="index">
+            <div class="category" v-show="filteredResourceList" v-for="(category, index) in filteredResourceList" v-bind:key="index">
                 <h3 class="category__title">{{category.categoryName}}</h3>
                 <div class="category__list">
                     <a v-bind:href="link.url" target="_blank" v-for="(link, index2) in category.links" v-bind:key="index2" class="category__list--link">
@@ -37,6 +37,10 @@
                         </div>
                     </a>
                 </div>
+            </div>
+            <div class="error-section" v-show="!filteredResourceList.length">
+                <i class="fas fa-exclamation-triangle icon"></i>
+                <p className="paragraph">Sorry! No result matched.</p>
             </div>
         </section>
         <footer class="section section__footer">

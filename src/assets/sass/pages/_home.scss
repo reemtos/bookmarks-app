@@ -131,4 +131,18 @@
             }
         }
     }
+    
+    .error-section {
+        align-items: center;
+        background-color: $color-secondary-light;
+        border-radius: 0.5rem;
+        color: $color-primary-light;
+        display: flex;
+        padding: 2rem;
+        
+        .icon {
+            font-size: 3rem;
+            margin-right: 2rem;
+        }
+    }
 }
