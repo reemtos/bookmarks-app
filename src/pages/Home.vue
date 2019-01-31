@@ -17,12 +17,12 @@
         </header>
         <section class="section section__search">
             <div class="search-box">
-                <input type="text" class="search-field" placeholder="Search from 70 awesome resources.." name="keyword">
+                <input type="text" v-model="searchQuery" v-on:keyup="filterResources" class="search-field" placeholder="Search from 70 awesome resources.." name="keyword">
                 <i class="fas fa-search search-icon"></i>
             </div>
         </section>
         <section class="section section__listing">
-            <div class="category" v-for="(category, index) in MyResources" v-bind:key="index">
+            <div class="category" v-for="(category, index) in filteredResourceList" v-bind:key="index">
                 <h3 class="category__title">{{category.categoryName}}</h3>
                 <div class="category__list">
                     <a v-bind:href="link.url" target="_blank" v-for="(link, index2) in category.links" v-bind:key="index2" class="category__list--link">
@@ -52,8 +52,31 @@ export default {
   name: 'Home',
   data () {
     return {
-      MyResources: [...Resources]
+      MyResources: [...Resources],
+      searchQuery: ''
     }
+  },
+  computed: {
+    filteredResourceList () {
+      if (!this.searchQuery) {
+        return this.MyResources
+      }
+      var searchResult = []
+      var lowerCaseQuery = this.searchQuery.toLowerCase()
+      this.MyResources.forEach((resource) => {
+        var matchTitle = resource.links.some(link => link.title.toLowerCase().includes(lowerCaseQuery))
+        if (matchTitle) {
+          var filteredResource = {}
+          filteredResource.categoryName = resource.categoryName
+          filteredResource.links = resource.links.filter(link => link.title.toLowerCase().includes(lowerCaseQuery))
+          searchResult.push({...filteredResource})
+        }
+      })
+      return searchResult
+    }
+  },
+  methods: {
+    filterResources () {}
   }
 }
 </script>
