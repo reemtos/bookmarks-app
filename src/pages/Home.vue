@@ -44,8 +44,8 @@
             </div>
         </section>
         <footer class="section section__footer">
-            <p class="info">Created by <a href="#" class="link" target="_blank">Tosin Orimogunje</a>.</p>
-            <p class="info">Illustration from <a href="#" class="link" target="_blank">Undraw</a>.</p>
+            <p class="info">Created by <a href="http://tosinorimogunje.com/" class="link" target="_blank">Tosin Orimogunje</a>.</p>
+            <p class="info">Illustration from <a href="https://undraw.co/" class="link" target="_blank">Undraw</a>.</p>
         </footer>
     </div>
 </template>
