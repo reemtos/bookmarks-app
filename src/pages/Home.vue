@@ -3,11 +3,13 @@
         <header class="section section__header">
             <div class="intro-section">
                 <div class="logo-holder">
-                    <i class="far fa-bookmark icon"></i>
+                    <a href="/" class="link">
+                        <i class="far fa-bookmark icon icon--regular"></i>
+                        <i class="fas fa-bookmark icon icon--solid"></i>
+                    </a>
                 </div>
                 <div class="introduction">
                     <h1 class="intro-phrase">Tosin’s Bookmarks</h1>
-                    <!-- <p class="intro-paraphrase">A collection of my favourite and valuable design and development resources as used frequently in my projects.</p> -->
                     <p class="intro-paraphrase">A collection of my favourite design and development resources; because my browser’s bookmarks bar became a mess.</p>
                 </div>
             </div>
@@ -17,7 +19,7 @@
         </header>
         <section class="section section__search">
             <div class="search-box">
-                <input type="text" v-model="searchQuery" v-on:keyup="filterResources" class="search-field" placeholder="Search from 70 awesome resources.." name="keyword">
+                <input type="text" v-model="searchQuery" v-on:keyup="filterResources" class="search-field" :placeholder="'Search from ' + totalResources + ' awesome resources..'" name="keyword">
                 <i class="fas fa-search search-icon"></i>
             </div>
         </section>
@@ -57,7 +59,8 @@ export default {
   data () {
     return {
       MyResources: [...Resources],
-      searchQuery: ''
+      searchQuery: '',
+      totalResources: 0
     }
   },
   computed: {
@@ -81,6 +84,11 @@ export default {
   },
   methods: {
     filterResources () {}
+  },
+  mounted () {
+    this.MyResources.forEach((category) => {
+      this.totalResources = this.totalResources + category.links.length
+    })
   }
 }
 </script>
