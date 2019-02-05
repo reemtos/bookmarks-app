@@ -48,7 +48,7 @@
         <footer class="section section__footer">
             <p class="info">Created by <a href="https://twitter.com/reemtos" class="link" target="_blank">Tosin Orimogunje</a>.</p>
             <p class="info">Illustration from <a href="https://undraw.co/" class="link" target="_blank">Undraw</a>.</p>
-            <!-- <p class="info"><a href="/#" class="link" target="_blank">Share on Twitter</a></p> -->
+            <p class="info"><a href="https://twitter.com/intent/tweet?text=Find links to numerous design and development resources and tools on https://bookmarkshub.co/ via @bookmarks_Hub" class="link" target="_blank">Share on Twitter</a></p>
         </footer>
     </div>
 </template>
