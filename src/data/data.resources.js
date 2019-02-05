@@ -1,10 +1,10 @@
 const Resources = [
   {
-    categoryName: 'Articles',
+    categoryName: 'Articles and Books',
     links: [
       {
         title: 'Clean Code Javascript',
-        url: 'https://github.com/ryanmcdermott/clean-code-javascript#table-of-contents'
+        url: 'https://github.com/ryanmcdermott/clean-code-javascript'
       },
       {
         title: 'CSS Weekly',
@@ -21,12 +21,20 @@ const Resources = [
       {
         title: 'CSS3, JS & HTML5 Articles',
         url: 'http://www.standardista.com/'
+      },
+      {
+        title: 'refactoring UI',
+        url: 'https://refactoringui.com/'
       }
     ]
   },
   {
-    categoryName: 'Dev Tools',
+    categoryName: 'Dev Resources',
     links: [
+      {
+        title: 'Git Explorer',
+        url: 'https://gitexplorer.com/'
+      },
       {
         title: 'Can I Use',
         url: 'https://caniuse.com/'
@@ -74,6 +82,10 @@ const Resources = [
     categoryName: 'Design Tools and Resources',
     links: [
       {
+        title: 'Free SVG Illustrations',
+        url: 'https://undraw.co/'
+      },
+      {
         title: 'Printable Sketch Sheet Templates',
         url: 'https://sketchsheets.com/'
       },
@@ -95,7 +107,7 @@ const Resources = [
       },
       {
         title: 'UI Gradients Generator',
-        url: 'https://uigradients.com/#BlueRaspberry'
+        url: 'https://uigradients.com/'
       },
       {
         title: 'Color Shades Generator',
@@ -128,6 +140,23 @@ const Resources = [
       {
         title: 'Free Photos',
         url: 'https://unsplash.com/'
+      }
+    ]
+  },
+  {
+    categoryName: 'Design Inspirations',
+    links: [
+      {
+        title: 'best web pages',
+        url: 'https://www.pages.xyz/'
+      },
+      {
+        title: 'awesome websites',
+        url: 'https://land-book.com/'
+      },
+      {
+        title: 'Call To Idea',
+        url: 'https://calltoidea.com/'
       }
     ]
   },

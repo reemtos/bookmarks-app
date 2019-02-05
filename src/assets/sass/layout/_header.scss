@@ -2,14 +2,29 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 2rem;
     
     .intro-section {
-        flex: 0 1 40rem;
+        width: 45%;
+        margin-bottom: 7rem;
         padding-top: 5rem;
+        
+        @include respond(large) {
+            margin-bottom: 5rem;
+        }
+        
+        @include respond(medium) {
+            margin-bottom: 0;
+            width: 80%;
+        }
+        
+        @include respond(small) {
+            width: 100%;
+        }
         
         .logo-holder {
             display: inline-block;
-            margin-bottom: 12rem;
+            margin-bottom: 10rem;
         }
         
         .link {
@@ -56,10 +71,16 @@
     }
     
     .illustration-section {
-        flex: 0 0 43rem;
+        align-items: flex-end;
+        display: flex;
+        width: 50%;
         
-        @include respond(large) {
-            display: none;
+        @include respond(medium) {
+            width: 80%;
+        }
+        
+        @include respond(small) {
+            width: 100%;
         }
         
         .illustration {

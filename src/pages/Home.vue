@@ -9,17 +9,17 @@
                     </a>
                 </div>
                 <div class="introduction">
-                    <h1 class="intro-phrase">Tosin’s Bookmarks</h1>
-                    <p class="intro-paraphrase">A collection of my favourite design and development resources; because my browser’s bookmarks bar became a mess.</p>
+                    <h1 class="intro-phrase">Bookmarks Hub</h1>
+                    <p class="intro-paraphrase">A collection of valuable design and development resource links for designers and developers in general.</p>
                 </div>
             </div>
             <div class="illustration-section">
-                <img src="../assets/images/checklist.png" alt="" class="illustration" />
+                <img src="../assets/images/bookmarks.png" alt="" class="illustration" />
             </div>
         </header>
         <section class="section section__search">
             <div class="search-box">
-                <input type="text" v-model="searchQuery" v-on:keyup="filterResources" class="search-field" :placeholder="'Search from ' + totalResources + ' awesome resources..'" name="keyword">
+                <input type="text" v-model="searchQuery" v-on:keyup="filterResources" class="search-field" :placeholder="'Search from ' + totalResources + ' resources..'" name="keyword">
                 <i class="fas fa-search search-icon"></i>
             </div>
         </section>
@@ -48,6 +48,7 @@
         <footer class="section section__footer">
             <p class="info">Created by <a href="http://tosinorimogunje.com/" class="link" target="_blank">Tosin Orimogunje</a>.</p>
             <p class="info">Illustration from <a href="https://undraw.co/" class="link" target="_blank">Undraw</a>.</p>
+            <p class="info"><a href="https://undraw.co/" class="link" target="_blank">Share on Twitter</a></p>
         </footer>
     </div>
 </template>
