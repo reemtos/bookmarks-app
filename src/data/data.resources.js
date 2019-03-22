@@ -50,6 +50,10 @@ const Resources = [
       {
         title: 'Favicon Generator',
         url: 'https://realfavicongenerator.net/'
+      },
+      {
+        title: 'blobmaker for svg shapes',
+        url: 'https://www.blobmaker.app/'
       }
     ]
   },
@@ -140,6 +144,10 @@ const Resources = [
       {
         title: 'Free Photos',
         url: 'https://unsplash.com/'
+      },
+      {
+        title: 'Name That Color',
+        url: 'http://chir.ag/projects/name-that-color/'
       }
     ]
   },
